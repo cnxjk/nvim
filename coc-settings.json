@@ -46,5 +46,6 @@
   "git.removedSign.hlGroup": "GitGutterDelete",
   "git.topRemovedSign.hlGroup": "GitGutterDelete",
   "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
-  "java.configuration.maven.userSettings": "/opt/homebrew/Cellar/maven/3.8.3/libexec/conf/settings.xml"
+  "java.configuration.maven.userSettings": "/opt/homebrew/Cellar/maven/3.8.3/libexec/conf/settings.xml",
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:\"/Users/zhangwenkang/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar\""
 }

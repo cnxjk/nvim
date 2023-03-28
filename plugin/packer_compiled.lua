@@ -74,100 +74,81 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["Comment.nvim"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/Comment.nvim",
-    url = "https://github.com/numToStr/Comment.nvim"
-  },
-  LuaSnip = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/LuaSnip",
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
-  ["cmp-nvim-lsp"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["cmp-path"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/cmp-path",
-    url = "https://github.com/hrsh7th/cmp-path"
-  },
-  cmp_luasnip = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
-    url = "https://github.com/saadparwaiz1/cmp_luasnip"
-  },
   ["coc.nvim"] = {
+    config = { "require('plugins/coc').setup()" },
     loaded = true,
     path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
-  },
-  ["gitsigns.nvim"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
-    url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["mason-lspconfig.nvim"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
-    url = "https://github.com/williamboman/mason-lspconfig.nvim"
-  },
-  ["mason.nvim"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/mason.nvim",
-    url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["nvim-autopairs"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
-    url = "https://github.com/windwp/nvim-autopairs"
-  },
-  ["nvim-cmp"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/nvim-cmp",
-    url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-    url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/nvim-tree/nvim-tree.lua"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-ts-rainbow"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
-    url = "https://github.com/p00f/nvim-ts-rainbow"
-  },
-  ["nvim-web-devicons"] = {
+  fzf = {
+    after = { "fzf.vim" },
     loaded = false,
     needs_bufread = false,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/fzf",
+    url = "https://github.com/junegunn/fzf"
+  },
+  ["fzf.vim"] = {
+    config = { "require('plugins/fzf').setup()" },
+    load_after = {
+      fzf = true
+    },
+    loaded = false,
+    needs_bufread = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/fzf.vim",
+    url = "https://github.com/junegunn/fzf.vim"
+  },
+  ["markdown-preview.nvim"] = {
+    commands = { "MarkdownPreview" },
+    config = { "require('plugins/markdown').setup()" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
+  ["nvim-foldsign"] = {
+    config = { 'require("nvim-foldsign").setup()' },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/nvim-foldsign",
+    url = "https://github.com/yaocccc/nvim-foldsign"
+  },
+  ["nvim-hlchunk"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/nvim-hlchunk",
+    url = "https://github.com/yaocccc/nvim-hlchunk"
+  },
+  ["nvim-lines.lua"] = {
+    config = { "require('plugins/nvim-lines').setup()" },
+    loaded = true,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/nvim-lines.lua",
+    url = "https://github.com/yaocccc/nvim-lines.lua"
+  },
+  ["nvim-tree.lua"] = {
+    commands = { "NvimTreeToggle", "NvimTreeFindFileToggle" },
+    config = { "require('plugins/nvim-tree').setup()" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    after = { "playground" },
+    config = { "require('plugins/tree-sitter').setup()" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
@@ -175,29 +156,160 @@ _G.packer_plugins = {
     path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["plenary.nvim"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/plenary.nvim",
-    url = "https://github.com/nvim-lua/plenary.nvim"
+  playground = {
+    load_after = {
+      ["nvim-treesitter"] = true
+    },
+    loaded = false,
+    needs_bufread = true,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
+  ["vim-comment"] = {
+    commands = { "*ToggleComment" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/vim-comment",
+    url = "https://github.com/yaocccc/vim-comment"
   },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
+  ["vim-echo"] = {
+    commands = { "VECHO" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/vim-echo",
+    url = "https://github.com/yaocccc/vim-echo"
   },
-  ["vim-tmux-navigator"] = {
+  ["vim-fcitx2en"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/vim-fcitx2en",
+    url = "https://github.com/yaocccc/vim-fcitx2en"
+  },
+  ["vim-floaterm"] = {
+    config = { "require('plugins/vim-floaterm').setup()" },
     loaded = true,
-    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
-    url = "https://github.com/christoomey/vim-tmux-navigator"
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
+  },
+  ["vim-markdown-toc"] = {
+    loaded = false,
+    needs_bufread = true,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/vim-markdown-toc",
+    url = "https://github.com/mzlogin/vim-markdown-toc"
+  },
+  ["vim-startuptime"] = {
+    commands = { "StartupTime" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/vim-startuptime",
+    url = "https://github.com/dstein64/vim-startuptime"
+  },
+  ["vim-surround"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/vim-surround",
+    url = "https://github.com/yaocccc/vim-surround"
+  },
+  vimcdoc = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/vimcdoc",
+    url = "https://github.com/yianwillis/vimcdoc"
+  },
+  ["wilder.nvim"] = {
+    config = { 'require("plugins/wilder").setup()' },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/wilder.nvim",
+    url = "https://github.com/gelguy/wilder.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: vim-floaterm
+time([[Config for vim-floaterm]], true)
+require('plugins/vim-floaterm').setup()
+time([[Config for vim-floaterm]], false)
+-- Config for: nvim-lines.lua
+time([[Config for nvim-lines.lua]], true)
+require('plugins/nvim-lines').setup()
+time([[Config for nvim-lines.lua]], false)
+-- Config for: coc.nvim
+time([[Config for coc.nvim]], true)
+require('plugins/coc').setup()
+time([[Config for coc.nvim]], false)
+
+-- Command lazy-loads
+time([[Defining lazy-load commands]], true)
+pcall(vim.api.nvim_create_user_command, 'MarkdownPreview', function(cmdargs)
+          require('packer.load')({'markdown-preview.nvim'}, { cmd = 'MarkdownPreview', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'markdown-preview.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('MarkdownPreview ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'VECHO', function(cmdargs)
+          require('packer.load')({'vim-echo'}, { cmd = 'VECHO', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-echo'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('VECHO ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'StartupTime', function(cmdargs)
+          require('packer.load')({'vim-startuptime'}, { cmd = 'StartupTime', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vim-startuptime'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('StartupTime ', 'cmdline')
+      end})
+pcall(vim.cmd, [[au CmdUndefined *ToggleComment ++once lua require"packer.load"({'vim-comment'}, {}, _G.packer_plugins)]])
+pcall(vim.api.nvim_create_user_command, 'NvimTreeToggle', function(cmdargs)
+          require('packer.load')({'nvim-tree.lua'}, { cmd = 'NvimTreeToggle', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'nvim-tree.lua'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('NvimTreeToggle ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'NvimTreeFindFileToggle', function(cmdargs)
+          require('packer.load')({'nvim-tree.lua'}, { cmd = 'NvimTreeFindFileToggle', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'nvim-tree.lua'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('NvimTreeFindFileToggle ', 'cmdline')
+      end})
+time([[Defining lazy-load commands]], false)
+
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim', 'vim-markdown-toc'}, { ft = "markdown" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+  -- Event lazy-loads
+time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au BufRead * ++once lua require("packer.load")({'nvim-treesitter'}, { event = "BufRead *" }, _G.packer_plugins)]]
+vim.cmd [[au CursorMoved * ++once lua require("packer.load")({'nvim-hlchunk'}, { event = "CursorMoved *" }, _G.packer_plugins)]]
+vim.cmd [[au ModeChanged * ++once lua require("packer.load")({'vim-surround'}, { event = "ModeChanged *" }, _G.packer_plugins)]]
+vim.cmd [[au CursorMovedI * ++once lua require("packer.load")({'nvim-hlchunk'}, { event = "CursorMovedI *" }, _G.packer_plugins)]]
+vim.cmd [[au CursorHold * ++once lua require("packer.load")({'nvim-foldsign'}, { event = "CursorHold *" }, _G.packer_plugins)]]
+vim.cmd [[au InsertLeavePre * ++once lua require("packer.load")({'vim-fcitx2en'}, { event = "InsertLeavePre *" }, _G.packer_plugins)]]
+vim.cmd [[au CmdLineEnter * ++once lua require("packer.load")({'fzf', 'vimcdoc'}, { event = "CmdLineEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au CmdlineEnter * ++once lua require("packer.load")({'wilder.nvim'}, { event = "CmdlineEnter *" }, _G.packer_plugins)]]
+time([[Defining lazy-load event autocommands]], false)
+vim.cmd("augroup END")
+vim.cmd [[augroup filetypedetect]]
+time([[Sourcing ftdetect script at: /Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/vim-markdown-toc/ftdetect/markdown.vim]], true)
+vim.cmd [[source /Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/vim-markdown-toc/ftdetect/markdown.vim]]
+time([[Sourcing ftdetect script at: /Users/zhangwenkang/.local/share/nvim/site/pack/packer/opt/vim-markdown-toc/ftdetect/markdown.vim]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
