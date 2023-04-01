@@ -14,7 +14,9 @@ function M.config()
         'coc-java',
         'coc-vue',
         'coc-vetur',
-        'coc-xml'
+        'coc-xml',
+        'coc-eslint',
+        'coc-prettier'
     }
     G.cmd("command! -nargs=? Fold :call CocAction('fold', <f-args>)")
     G.cmd("hi! link CocPum Pmenu")

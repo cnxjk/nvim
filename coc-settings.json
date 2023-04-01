@@ -29,7 +29,6 @@
     "value": "\uf89f",
     "variable": "\ue71b"
   },
-  "coc.preferences.formatOnSave": true,
   "diagnostic.errorSign": "\uf467",
   "diagnostic.warningSign": "\uf071",
   "diagnostic.infoSign": "\uf129",
@@ -47,5 +46,9 @@
   "git.topRemovedSign.hlGroup": "GitGutterDelete",
   "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
   "java.configuration.maven.userSettings": "/opt/homebrew/Cellar/maven/3.8.3/libexec/conf/settings.xml",
-  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:\"/Users/zhangwenkang/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar\""
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:\"/Users/zhangwenkang/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar\"",
+  "coc.preferences.formatOnSave": false,
+  "coc.preferences.formatOnSaveFileTypes": ["css", "markdown", "vue"],
+  "vetur.trace.server": "verbose",
+  "vetur.format.enable": true // vetur默认格式化是true
 }
