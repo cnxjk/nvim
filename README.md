@@ -1,2 +1,4 @@
-# nvim
-neovim 仓库，neovim 配置文件，主要以java，vue，开发为主。替换VScode。
+# 💤 LazyVim
+
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
